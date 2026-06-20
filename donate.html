@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Now - NayePankh Foundation</title>
+  <meta name="description" content="Support NayePankh Foundation's education, food, and hygiene drives. Donate online and claim 50% tax deduction under Section 80G.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="header-logo">
+        <svg viewBox="0 0 100 100" style="width: 40px; height: 40px;">
+          <path d="M10,50 C25,20 60,15 90,45 C75,55 55,55 45,55 C40,55 35,50 30,50 C20,50 15,55 10,50 Z" fill="url(#logo-grad-1)"/>
+          <path d="M15,60 C30,35 60,30 85,55 C70,65 55,65 48,65 C43,65 38,60 33,60 C25,60 20,63 15,60 Z" fill="url(#logo-grad-2)"/>
+          <defs>
+            <linearGradient id="logo-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0d9488" />
+              <stop offset="100%" stop-color="#2dd4bf" />
+            </linearGradient>
+            <linearGradient id="logo-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f97316" />
+              <stop offset="100%" stop-color="#fb923c" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>NayePankh</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="volunteer.html" class="nav-link">Get Involved</a></li>
+          <li><a href="donate.html" class="nav-link active">Donate</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <svg class="sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path>
+          </svg>
+          <svg class="moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+        <a href="donate.html" class="btn btn-primary" id="nav-donate-btn">Donate Now</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section section-alt" style="padding-top: 140px; padding-bottom: 4rem;">
+    <div class="container text-center">
+      <span class="badge" style="background-color: var(--primary-glow); border-color: var(--primary);">Secure Donation</span>
+      <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Empower Through Giving</h1>
+      <p style="max-width: 600px; margin: 0 auto;">Your contributions go directly into funding meal preparation, buying school uniforms, and hygiene materials.</p>
+    </div>
+  </section>
+
+  <!-- Donation Main Content -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Preset Tier Cards -->
+      <div class="tier-cards">
+        <!-- Preset 1 -->
+        <div class="tier-card" data-amount="500">
+          <div class="tier-amount">₹500</div>
+          <div class="tier-title">Project Nari Support</div>
+          <div class="tier-desc">Sponsors sanitary hygiene kits for 5 girls for a month.</div>
+        </div>
+
+        <!-- Preset 2 -->
+        <div class="tier-card selected" data-amount="1500">
+          <div class="tier-amount">₹1,500</div>
+          <div class="tier-title">Project Shiksha Support</div>
+          <div class="tier-desc">Provides a complete educational bag, books, and uniforms to a student.</div>
+        </div>
+
+        <!-- Preset 3 -->
+        <div class="tier-card" data-amount="2500">
+          <div class="tier-amount">₹2,500</div>
+          <div class="tier-title">Project Annapurna Support</div>
+          <div class="tier-desc">Provides healthy monthly meals to a family of 4 in low-income settlements.</div>
+        </div>
+      </div>
+
+      <!-- Donation Grid: Calc & Bank details -->
+      <div class="donation-grid">
+        
+        <!-- Calculator -->
+        <div class="donation-calculator">
+          <span class="tax-badge">80G Tax Benefits Calculator</span>
+          <h3 class="calc-title">Customize Your Support</h3>
+          
+          <div class="form-group">
+            <label for="donation-input">Enter Donation Amount (INR)</label>
+            <div class="amount-input-box">
+              <span class="currency-symbol">₹</span>
+              <input type="number" id="donation-input" value="1500" min="100" max="1000000" required>
+            </div>
+            
+            <div class="slider-container">
+              <input type="range" id="donation-range" class="range-slider" min="500" max="50000" step="500" value="1500">
+            </div>
+          </div>
+
+          <div class="calc-results">
+            <div class="calc-row">
+              <span class="calc-label">Total Donation Amount</span>
+              <span class="calc-value" id="calc-total">--</span>
+            </div>
+            <div class="calc-row">
+              <span class="calc-label">Tax Exemption (Section 80G - 50%)</span>
+              <span class="calc-value" id="calc-tax-saving">₹0</span>
+            </div>
+            <div class="calc-row">
+              <span class="calc-label">Net Effective Cost to You</span>
+              <span class="calc-value highlight" id="calc-net-cost">₹0</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; align-items: flex-start; background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--card-border);">
+            <div style="font-size: 1.5rem;">🌟</div>
+            <div>
+              <h4 style="margin-bottom: 0.25rem; font-size: 0.95rem; color: var(--primary);">Social Impact Estimate</h4>
+              <p style="font-size: 0.85rem; margin: 0; line-height: 1.4;" id="calc-impact">Updating impact...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Gateway Options -->
+        <div class="payment-modes">
+          <h3>Payment Credentials</h3>
+          <p>Please select your preferred payment mode below. Receipts for tax filings are dispatched instantly.</p>
+          
+          <!-- Tabbed Bank details / QR -->
+          <div class="bank-details">
+            <h4 style="margin-bottom: 1rem; color: var(--primary);">Option A: Direct Bank Transfer (NEFT/RTGS)</h4>
+            <div class="bank-details-row">
+              <span class="bank-label">Account Name:</span>
+              <span class="bank-value">NAYEPANKH FOUNDATION</span>
+            </div>
+            <div class="bank-details-row">
+              <span class="bank-label">Bank Name:</span>
+              <span class="bank-value">HDFC Bank Ltd.</span>
+            </div>
+            <div class="bank-details-row">
+              <span class="bank-label">Account No:</span>
+              <span class="bank-value">50200062839201 (Mock)</span>
+            </div>
+            <div class="bank-details-row">
+              <span class="bank-label">IFSC Code:</span>
+              <span class="bank-value">HDFC0001203 (Mock)</span>
+            </div>
+            <div class="bank-details-row">
+              <span class="bank-label">Branch:</span>
+              <span class="bank-value">Noida Sector 62, UP</span>
+            </div>
+          </div>
+
+          <div class="qr-section">
+            <h4 style="margin-bottom: 1rem; color: var(--secondary);">Option B: Scan to Pay (UPI)</h4>
+            <div class="qr-box">
+              <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+                <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+                <!-- Corners -->
+                <rect x="10" y="10" width="25" height="25" fill="#000" stroke="#fff" stroke-width="4"/>
+                <rect x="15" y="15" width="15" height="15" fill="#fff"/>
+                <rect x="18" y="18" width="9" height="9" fill="#000"/>
+                
+                <rect x="65" y="10" width="25" height="25" fill="#000" stroke="#fff" stroke-width="4"/>
+                <rect x="70" y="15" width="15" height="15" fill="#fff"/>
+                <rect x="73" y="18" width="9" height="9" fill="#000"/>
+                
+                <rect x="10" y="65" width="25" height="25" fill="#000" stroke="#fff" stroke-width="4"/>
+                <rect x="15" y="70" width="15" height="15" fill="#fff"/>
+                <rect x="18" y="73" width="9" height="9" fill="#000"/>
+                
+                <!-- Random QR patterns -->
+                <path d="M 45 10 h 5 v 5 h -5 z M 55 10 h 5 v 5 h -5 z M 40 20 h 10 v 5 h -10 z M 50 25 h 5 v 5 h -5 z M 40 30 h 5 v 10 h -5 z M 50 35 h 10 v 5 h -10 z M 10 45 h 10 v 5 h -10 z M 25 45 h 5 v 10 h -5 z M 35 45 h 20 v 5 h -20 z M 15 55 h 5 v 5 h -5 z M 30 55 h 10 v 5 h -10 z M 45 55 h 5 v 10 h -5 z M 55 55 h 10 v 5 h -10 z M 65 40 h 10 v 5 h -10 z M 80 40 h 10 v 10 h -10 z M 75 50 h 10 v 5 h -10 z M 70 60 h 10 v 5 h -10 z M 65 70 h 5 v 20 h -5 z M 75 70 h 15 v 5 h -15 z M 80 80 h 10 v 10 h -10 z M 40 70 h 10 v 5 h -10 z M 50 75 h 5 v 5 h -5 z M 40 85 h 15 v 5 h -15 z" fill="#000"/>
+              </svg>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Scan this QR using BHIM, GooglePay, PhonePe or Paytm.</p>
+          </div>
+
+          <!-- Transaction confirmation simulator form -->
+          <form id="payment-form" style="margin-top: 2rem; border-top: 1px dashed var(--card-border); padding-top: 2rem;">
+            <h4 style="margin-bottom: 1rem;">Confirm Your Donation Payment</h4>
+            <div class="form-group">
+              <label for="don-name">Donor Name</label>
+              <input type="text" id="don-name" placeholder="e.g. Tanuj Sen" required class="input-style">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="don-pan">PAN Card Number (Required for 80G)</label>
+                <input type="text" id="don-pan" placeholder="e.g. ABCDE1234F" required pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" class="input-style" style="text-transform: uppercase;">
+              </div>
+              <div class="form-group">
+                <label for="don-ref">UPI/Bank Ref Number</label>
+                <input type="text" id="don-ref" placeholder="12 digit transaction Ref" required class="input-style">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.95rem;">Verify & Issue 80G Receipt</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+          <svg viewBox="0 0 100 100" style="width: 32px; height: 32px;">
+            <path d="M10,50 C25,20 60,15 90,45 C75,55 55,55 45,55 C40,55 35,50 30,50 C20,50 15,55 10,50 Z" fill="url(#logo-grad-footer-1)"/>
+            <path d="M15,60 C30,35 60,30 85,55 C70,65 55,65 48,65 C43,65 38,60 33,60 C25,60 20,63 15,60 Z" fill="url(#logo-grad-footer-2)"/>
+            <defs>
+              <linearGradient id="logo-grad-footer-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0d9488" />
+                <stop offset="100%" stop-color="#2dd4bf" />
+              </linearGradient>
+              <linearGradient id="logo-grad-footer-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f97316" />
+                <stop offset="100%" stop-color="#fb923c" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>NayePankh</span>
+        </a>
+        <p>A government-registered NGO (Reg No: UP/2021/0284) that believes in grass-root community development, digital education, and healthcare equity.</p>
+        <ul class="social-links">
+          <li><a href="#" class="social-link" aria-label="Facebook">FB</a></li>
+          <li><a href="#" class="social-link" aria-label="Instagram">IG</a></li>
+          <li><a href="#" class="social-link" aria-label="Twitter">TW</a></li>
+          <li><a href="#" class="social-link" aria-label="LinkedIn">LN</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li><a href="volunteer.html">Get Involved</a></li>
+          <li><a href="donate.html">Donate Now</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Pillars</h4>
+        <ul>
+          <li><a href="projects.html">Project Shiksha</a></li>
+          <li><a href="projects.html">Project Annapurna</a></li>
+          <li><a href="projects.html">Project Nari</a></li>
+          <li><a href="volunteer.html">Youth Internship</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our monthly newsletter to see progress reports of our drives.</p>
+        <form class="newsletter-form" id="newsletter-form-footer">
+          <input type="email" placeholder="Your Email Address" required class="input-style" style="border-radius: var(--radius-full) 0 0 var(--radius-full); margin-bottom: 0;">
+          <button type="submit" class="btn btn-primary" style="border-radius: 0 var(--radius-full) var(--radius-full) 0; padding: 0.75rem 1.5rem;" id="newsletter-submit-btn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        <p>&copy; 2026 NayePankh Foundation. All Rights Reserved. Registered under the Societies Registration Act.</p>
+      </div>
+      <div>
+        <p>12A & 80G Certified | PAN: AABTN4839M</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

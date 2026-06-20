@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved - NayePankh Foundation</title>
+  <meta name="description" content="Join NayePankh Foundation as a volunteer or intern to build a better future. Apply today.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Accordion / FAQ specific styles */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    details {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    details[open] {
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+    }
+    
+    summary {
+      font-weight: 700;
+      font-size: 1.1rem;
+      font-family: var(--font-heading);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      outline: none;
+    }
+    
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    summary::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--primary);
+      transition: transform 0.3s ease;
+    }
+    
+    details[open] summary::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+    
+    details p {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="header-logo">
+        <svg viewBox="0 0 100 100" style="width: 40px; height: 40px;">
+          <path d="M10,50 C25,20 60,15 90,45 C75,55 55,55 45,55 C40,55 35,50 30,50 C20,50 15,55 10,50 Z" fill="url(#logo-grad-1)"/>
+          <path d="M15,60 C30,35 60,30 85,55 C70,65 55,65 48,65 C43,65 38,60 33,60 C25,60 20,63 15,60 Z" fill="url(#logo-grad-2)"/>
+          <defs>
+            <linearGradient id="logo-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0d9488" />
+              <stop offset="100%" stop-color="#2dd4bf" />
+            </linearGradient>
+            <linearGradient id="logo-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f97316" />
+              <stop offset="100%" stop-color="#fb923c" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>NayePankh</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="volunteer.html" class="nav-link active">Get Involved</a></li>
+          <li><a href="donate.html" class="nav-link">Donate</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <svg class="sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path>
+          </svg>
+          <svg class="moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+        <a href="donate.html" class="btn btn-primary" id="nav-donate-btn">Donate Now</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section section-alt" style="padding-top: 140px; padding-bottom: 4rem;">
+    <div class="container text-center">
+      <span class="badge" style="background-color: var(--primary-glow); border-color: var(--primary);">Join Our Team</span>
+      <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Spread Your Wings With Us</h1>
+      <p style="max-width: 600px; margin: 0 auto;">Help us drive real change by contributing your time, skills, and energy.</p>
+    </div>
+  </section>
+
+  <!-- Opportunities & Form Section -->
+  <section class="section">
+    <div class="container volunteer-layout">
+      <!-- Opportunities Info -->
+      <div style="animation: slideUp 0.6s ease;">
+        <span class="badge">Roles & Opportunities</span>
+        <h2 style="margin-top: 0.5rem; margin-bottom: 1.5rem;">How Can You Help?</h2>
+        <p>Volunteering is a great way to gain professional experience, learn new skills, and connect with like-minded change makers. At NayePankh, we welcome students, corporate professionals, and community leaders.</p>
+        
+        <div class="grid-2" style="margin-top: 2.5rem; grid-template-columns: 1fr;">
+          <div class="stat-card" style="text-align: left; padding: 1.5rem; display: flex; gap: 1.25rem;">
+            <div style="flex-shrink: 0; color: var(--primary); font-size: 2rem;">✏️</div>
+            <div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 0.25rem;">Teaching & Mentoring</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">Teach primary subjects, English, or digital skills to kids in our weekend Project Shiksha camps.</p>
+            </div>
+          </div>
+
+          <div class="stat-card" style="text-align: left; padding: 1.5rem; display: flex; gap: 1.25rem;">
+            <div style="flex-shrink: 0; color: var(--secondary); font-size: 2rem;">📢</div>
+            <div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 0.25rem;">Social Media & Writing</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">Help document our projects, create posters/videos, and write impactful stories for our handles.</p>
+            </div>
+          </div>
+
+          <div class="stat-card" style="text-align: left; padding: 1.5rem; display: flex; gap: 1.25rem;">
+            <div style="flex-shrink: 0; color: var(--primary); font-size: 2rem;">🤝</div>
+            <div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 0.25rem;">Campaign Management</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">Coordinate our on-ground food distribution drives and menstrual hygiene workshops.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application Form -->
+      <div class="form-wrapper">
+        <h3>Apply For Membership</h3>
+        <form id="volunteer-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="v-name">Full Name</label>
+              <input type="text" id="v-name" required class="input-style" placeholder="e.g. Rahul Sen">
+            </div>
+            <div class="form-group">
+              <label for="v-email">Email Address</label>
+              <input type="email" id="v-email" required class="input-style" placeholder="e.g. rahul@mail.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="v-phone">Phone Number</label>
+              <input type="tel" id="v-phone" required class="input-style" placeholder="e.g. +91 9876543210">
+            </div>
+            <div class="form-group">
+              <label for="v-role">Preferred Area</label>
+              <select id="v-role" required class="input-style">
+                <option value="" disabled selected>Select an option</option>
+                <option value="teaching">Teaching / Project Shiksha</option>
+                <option value="drives">Field Operations / Annapurna</option>
+                <option value="hygiene">Women Hygiene / Nari</option>
+                <option value="media">Design & Social Media</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="v-message">Why do you want to join NayePankh?</label>
+            <textarea id="v-message" required class="input-style" placeholder="Tell us briefly about your motivation and skills..."></textarea>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 2.5rem;">
+            <label class="checkbox-label">
+              <input type="checkbox" required>
+              <span>I confirm that the details provided are correct and I am willing to commit at least 3 hours per week to NGO drives.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" id="volunteer-submit-btn">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordions -->
+  <section class="section section-alt" id="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to common questions about volunteering and internships.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <details>
+          <summary>Is there an age limit to join NayePankh?</summary>
+          <p>No, we do not have strict age barriers. While we are a youth-led foundation run primarily by high school and college students, anyone with a passionate heart and a willingness to help underprivileged sections is welcome to apply.</p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details>
+          <summary>Will I receive a certificate for my contribution?</summary>
+          <p>Yes, all official volunteers and interns receive a formal certificate of appreciation and a letter of recommendation detailing their impact, hours served, and projects handled. These certificates are highly recognized in college applications and career paths.</p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details>
+          <summary>Are on-ground drives safe?</summary>
+          <p>Absolutely. We prioritize safety. All on-ground food distribution or medical camps are organized with local permissions, proper supervision, and protective hygiene wear. Student volunteers are always accompanied by lead project coordinators.</p>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details>
+          <summary>Can I volunteer remotely?</summary>
+          <p>Yes. If you are not based in North India or cannot travel for field work, you can apply for our digital volunteer positions. These include graphic designing, content writing, social media management, translation services, and fundraising coordinate roles.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+          <svg viewBox="0 0 100 100" style="width: 32px; height: 32px;">
+            <path d="M10,50 C25,20 60,15 90,45 C75,55 55,55 45,55 C40,55 35,50 30,50 C20,50 15,55 10,50 Z" fill="url(#logo-grad-footer-1)"/>
+            <path d="M15,60 C30,35 60,30 85,55 C70,65 55,65 48,65 C43,65 38,60 33,60 C25,60 20,63 15,60 Z" fill="url(#logo-grad-footer-2)"/>
+            <defs>
+              <linearGradient id="logo-grad-footer-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0d9488" />
+                <stop offset="100%" stop-color="#2dd4bf" />
+              </linearGradient>
+              <linearGradient id="logo-grad-footer-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f97316" />
+                <stop offset="100%" stop-color="#fb923c" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>NayePankh</span>
+        </a>
+        <p>A government-registered NGO (Reg No: UP/2021/0284) that believes in grass-root community development, digital education, and healthcare equity.</p>
+        <ul class="social-links">
+          <li><a href="#" class="social-link" aria-label="Facebook">FB</a></li>
+          <li><a href="#" class="social-link" aria-label="Instagram">IG</a></li>
+          <li><a href="#" class="social-link" aria-label="Twitter">TW</a></li>
+          <li><a href="#" class="social-link" aria-label="LinkedIn">LN</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li><a href="volunteer.html">Get Involved</a></li>
+          <li><a href="donate.html">Donate Now</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Pillars</h4>
+        <ul>
+          <li><a href="projects.html">Project Shiksha</a></li>
+          <li><a href="projects.html">Project Annapurna</a></li>
+          <li><a href="projects.html">Project Nari</a></li>
+          <li><a href="volunteer.html">Youth Internship</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our monthly newsletter to see progress reports of our drives.</p>
+        <form class="newsletter-form" id="newsletter-form-footer">
+          <input type="email" placeholder="Your Email Address" required class="input-style" style="border-radius: var(--radius-full) 0 0 var(--radius-full); margin-bottom: 0;">
+          <button type="submit" class="btn btn-primary" style="border-radius: 0 var(--radius-full) var(--radius-full) 0; padding: 0.75rem 1.5rem;" id="newsletter-submit-btn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        <p>&copy; 2026 NayePankh Foundation. All Rights Reserved. Registered under the Societies Registration Act.</p>
+      </div>
+      <div>
+        <p>12A & 80G Certified | PAN: AABTN4839M</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
